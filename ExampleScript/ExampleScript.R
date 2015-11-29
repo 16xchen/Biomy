@@ -2,7 +2,7 @@
 #Correlating relative abunadnce microbiome of host strain to Single Nucleotide Polymorphisms of host strain
 #author: Xingyao Chen
 #
-install_github("Biomy", "16xchen")
+install_github("16xchen/Biomy")
 library(Biomy)
 rm(list=ls())
 #
