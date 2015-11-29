@@ -1,0 +1,11 @@
+Package: Biomy
+Type: Package
+Title: Tool to find genetic factors that drive the composition of host microbiome
+Version: 0.1
+Date: 2015-11-29
+Author: Xingyao Chen
+Maintainer: Who to complain to <16xchen@mdirss.org>
+Description: Correlating the relative abunadnce of host microbiome to Single Nucleotide Polymorphisms of host.
+License: What license is it under?
+LazyData: TRUE
+RoxygenNote: 5.0.1
