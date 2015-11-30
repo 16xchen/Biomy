@@ -6,7 +6,7 @@
 #' @param strain.names a character vector of strain names
 #' @return a large list of dendrograms
 #' @examples
-#' chrX = SampSnp() #load SNP data
+#' chrX = SampSNP() #load SNP data
 #' strain.names=c(paste("strain", 1:(ncol(chrX)-1), sep="")) #assign strain names, strain names must match between microbiome and SNP dendrograms
 #' mysnptree=maketree(snpdata=chrX, strain.names=strain.names)
 #' mysnptree

@@ -13,7 +13,7 @@ a large dataframe of SNP data from various mouse strains
 dataset originally downloaded from <http://msub.csbio.unc.edu/>
 }
 \examples{
-chrX=SampSnp()
+chrX=SampSNP()
 head(chrX)
 
 }

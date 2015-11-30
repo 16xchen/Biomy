@@ -4,7 +4,7 @@
 #'
 #' @return a large dataframe of SNP data from various mouse strains
 #' @examples
-#' chrX=SampSnp()
+#' chrX=SampSNP()
 #' head(chrX)
 #'
 #' @author Xingyao Chen

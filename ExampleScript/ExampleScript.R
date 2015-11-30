@@ -9,7 +9,7 @@ install_github("16xchen/Biomy")
 library(Biomy)
 rm(list=ls())
 #
-chrX = SampSnp()
+chrX = SampSNP()
 mysnptree=maketree(chrX, strain.names=c(paste("strain", 1:(ncol(chrX)-1), sep="")))
 #
 set.seed(1234)
