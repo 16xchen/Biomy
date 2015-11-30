@@ -2,7 +2,7 @@
 % Please edit documentation in R/drawtangle.R
 \name{drawtangle}
 \alias{drawtangle}
-\title{Making tanglegrams of microbiome tree matched with snp trees}
+\title{Matching dendrograms}
 \usage{
 drawtangle(snptree, micro.dend, cordata.best, chr.num)
 }
@@ -19,7 +19,7 @@ drawtangle(snptree, micro.dend, cordata.best, chr.num)
 Plots highlt correlated tanglegrams with SNP location on chromosome in basepairs
 }
 \description{
-Making tanglegrams of microbiome tree matched with snp trees
+Making tanglegrams of microbiome dendrograms matched up with snp dendrograms
 }
 \examples{
 set.seed(1234) #simulate microbiome relative abundance dataframe

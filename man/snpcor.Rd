@@ -2,8 +2,7 @@
 % Please edit documentation in R/snpcor.R
 \name{snpcor}
 \alias{snpcor}
-\title{Correlating SNP dendrograms with the microbiome dendrogram
-Calculate Baker's Gamma correlation coefficient between two trees}
+\title{Correlating SNP dendrograms with the microbiome dendrogram}
 \usage{
 snpcor(snpdata, snptree, micro.dend)
 }
@@ -18,7 +17,6 @@ snpcor(snpdata, snptree, micro.dend)
 a data frame of positions, snp chromosomal location, and correlation coefficient
 }
 \description{
-Correlating SNP dendrograms with the microbiome dendrogram
 Calculate Baker's Gamma correlation coefficient between two trees
 }
 \examples{

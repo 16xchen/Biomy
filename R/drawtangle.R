@@ -1,4 +1,6 @@
-#' Making tanglegrams of microbiome tree matched with snp trees
+#' Matching dendrograms
+#'
+#' Making tanglegrams of microbiome dendrograms matched up with snp dendrograms
 #'
 #' @param snptree A list of dendrograms generated from snp data
 #' @param micro.dend A dendrogram generated from microbiome relative abundance data

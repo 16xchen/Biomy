@@ -1,9 +1,6 @@
 #' Generating dendrograms for the entire chromosome
 #'
-#'
-#' Uses the {finddistnace} function to cluster strains based on dissimilarity of SNPs
-#'
-#' One drendrogram for every 100 snps
+#' Uses the {finddistnace} function to cluster strains based on dissimilarity of SNPs. One drendrogram for every 100 snps
 #'
 #' @param snpdata SNP data downloaded from opensource databases such as <http://msub.csbio.unc.edu/>or <http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF>
 #' @param strain.names a character vector of strain names

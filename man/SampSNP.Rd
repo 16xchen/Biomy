@@ -2,8 +2,7 @@
 % Please edit documentation in R/SampSNP.R
 \name{SampSNP}
 \alias{SampSNP}
-\title{loading a sample SNP data
-dataset originally downloaded from <http://msub.csbio.unc.edu/>}
+\title{Loading a sample SNP data}
 \usage{
 SampSNP()
 }
@@ -11,7 +10,6 @@ SampSNP()
 a large dataframe of SNP data from various mouse strains
 }
 \description{
-loading a sample SNP data
 dataset originally downloaded from <http://msub.csbio.unc.edu/>
 }
 \examples{

@@ -2,20 +2,20 @@
 % Please edit documentation in R/snpcor.best.R
 \name{snpcor.best}
 \alias{snpcor.best}
-\title{Extracting the highest correlations from the correlation data}
+\title{Subestting for highest correlations}
 \usage{
 snpcor.best(cordata, threshold)
 }
 \arguments{
-\item{threshold}{Percent thrshold (0<threshold<1) to search for highest correlations, default is 0.95}
+\item{cordata}{A dataframe generated from the function snpcor}
 
-\item{searchdata}{A dataframe generated from the function snpcor}
+\item{threshold}{Percent thrshold (0<threshold<1) to search for highest correlations, default is 0.95}
 }
 \value{
 a subsetted correlation dataframe
 }
 \description{
-Extracting the highest correlations from the correlation data
+Subsets dataframe from {snpcor} function to contain only the highly correlated SNP dendrograms
 }
 \examples{
 set.seed(1234) #simulate microbiome relative abundance dataframe

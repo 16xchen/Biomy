@@ -15,10 +15,7 @@ maketree(snpdata, strain.names)
 a large list of dendrograms
 }
 \description{
-Uses the {finddistnace} function to cluster strains based on dissimilarity of SNPs
-}
-\details{
-One drendrogram for every 100 snps
+Uses the {finddistnace} function to cluster strains based on dissimilarity of SNPs. One drendrogram for every 100 snps
 }
 \examples{
 chrX = SampSnp() #load SNP data

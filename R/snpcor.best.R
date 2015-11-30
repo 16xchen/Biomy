@@ -1,8 +1,10 @@
-#'Extracting the highest correlations from the correlation data
+#' Subestting for highest correlations
+#'
+#' Subsets dataframe from {snpcor} function to contain only the highly correlated SNP dendrograms
 #'
 #'
+#' @param cordata A dataframe generated from the function snpcor
 #' @param threshold Percent thrshold (0<threshold<1) to search for highest correlations, default is 0.95
-#' @param searchdata A dataframe generated from the function snpcor
 #' @return a subsetted correlation dataframe
 #' @examples
 #' set.seed(1234) #simulate microbiome relative abundance dataframe

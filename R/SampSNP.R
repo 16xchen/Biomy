@@ -1,5 +1,7 @@
-#' loading a sample SNP data
+#' Loading a sample SNP data
+#'
 #' dataset originally downloaded from <http://msub.csbio.unc.edu/>
+#'
 #' @return a large dataframe of SNP data from various mouse strains
 #' @examples
 #' chrX=SampSnp()
