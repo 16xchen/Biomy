@@ -1,6 +1,7 @@
 #Example script using package Biomy
 #Correlating relative abunadnce microbiome of host strain to Single Nucleotide Polymorphisms of host strain
 #author: Xingyao Chen
+#date: 11/29/15
 #
 install.packages("devtools")
 library(devtools)
@@ -8,7 +9,7 @@ install_github("16xchen/Biomy")
 library(Biomy)
 rm(list=ls())
 #
-chrX = read.csv("~/Biomy/chrX.csv")
+chrX = SampSnp()
 mysnptree=maketree(chrX, strain.names=c(paste("strain", 1:(ncol(chrX)-1), sep="")))
 #
 set.seed(1234)

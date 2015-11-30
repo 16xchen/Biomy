@@ -32,7 +32,7 @@ colnames(abundance)=cname
 
 mymicro.dend=microtree(microdata=abundance, nboot=10) #cluster strains by microbiome
 
-chrX = read.csv("~/Biomy/chrX.csv")  #load SNP data from opensource database
+chrX = SampSnp()  #load SNP data
 strain.names=colnames(abundance) #assign the same strain names
 mysnptree=maketree(snpdata=chrX, strain.names=strain.names) #cluster strains by every 100 SNPs
 
