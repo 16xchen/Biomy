@@ -4,12 +4,12 @@
 \alias{traittree}
 \title{Clustering strains base on quantitative trait data}
 \usage{
-traittree(mircodata, nboot = 1000)
+traittree(traitdata, nboot = 1000)
 }
 \arguments{
-\item{nboot}{The number of bootstrap replications. The default is 1000.}
+\item{traitdata}{A matrix of relative trait data}
 
-\item{microdata}{A matrix of relative trait data}
+\item{nboot}{The number of bootstrap replications. The default is 1000.}
 }
 \value{
 An object of dendrgram class
@@ -21,7 +21,7 @@ Calculates p-values for hierarchical clustering via multiscale bootstrap resampl
 Hierarchical clustering is done for given data and p-values are computed for each of the clusters.
 }
 \examples{
-set.seed(1234)  #simulate microbiome relative trait data
+set.seed(1234)  #simulate quantitative trait data
 x <- rnorm(n=(16*12), mean=10, sd=10)
 trait=matrix(x,16,12)
 rname=paste("trait",1:16,sep="")
@@ -29,9 +29,9 @@ cname=paste("strain", 1:12, sep="")
 rownames(trait)=rname
 colnames(trait)=cname
 
-microdend=microtree(microdata=trait, nboot=10)
-microdend
-plot(microdend)
+traitdend=traittree(traitdata=trait, nboot=10)
+traitdend
+plot(traitdend)
 
 }
 \author{

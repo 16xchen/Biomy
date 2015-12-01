@@ -4,12 +4,12 @@
 \alias{drawtangle}
 \title{Matching dendrograms}
 \usage{
-drawtangle(snptree, micro.dend, cordata.best, chr.num)
+drawtangle(snptree, trait.dend, cordata.best, chr.num)
 }
 \arguments{
 \item{snptree}{A list of dendrograms generated from snp data}
 
-\item{micro.dend}{A dendrogram generated from quantitative trait data}
+\item{trait.dend}{A dendrogram generated from quantitative trait data}
 
 \item{chr.num}{The chromosome number from which the snps are located}
 
@@ -30,15 +30,15 @@ cname=paste("strain", 1:12, sep="")
 rownames(trait)=rname
 colnames(trait)=cname
 
-mymicro.dend=microtree(microdata=trait, nboot=10) #cluster strains by microbiome
+mytrait.dend=traittree(traitdata=trait, nboot=10) #cluster strains by trait
 
 chrX = SampSNP()  #load SNP data
 strain.names=colnames(trait) #assign the same strain names
 mysnptree=maketree(snpdata=chrX, strain.names=strain.names) #cluster strains by every 100 SNPs
 
-mycordata=snpcor(snpdata=chrX, snptree=mysnptree, micro.dend=mymicro.dend) #calculate correlation coefficient for micribiome dendrogram and each SNP dendrogram
+mycordata=snpcor(snpdata=chrX, snptree=mysnptree, trait.dend=mytrait.dend) #calculate Baker's correlation coefficient for trait dendrogram and each SNP dendrogram
 mycordata.best=snpcor.best(cordata=mycordata,threshold = 0.95) #find highly correlated SNP dendrograms
-drawtangle(snptree=mysnptree, micro.dend=mymicro.dend, cordata.best=mycordata.best, chr.num="X") #plot out as tanglegrams
+drawtangle(snptree=mysnptree, trait.dend=mytrait.dend, cordata.best=mycordata.best, chr.num="X") #plot out as tanglegrams
 
 }
 \author{

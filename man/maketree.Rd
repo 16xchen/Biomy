@@ -19,7 +19,7 @@ Uses the {finddistnace} function to cluster strains based on dissimilarity of SN
 }
 \examples{
 chrX = SampSNP() #load SNP data
-strain.names=c(paste("strain", 1:(ncol(chrX)-1), sep="")) #assign strain names, strain names must match between microbiome and SNP dendrograms
+strain.names=c(paste("strain", 1:(ncol(chrX)-1), sep="")) #assign strain names, strain names must match between trait and SNP dendrograms
 mysnptree=maketree(snpdata=chrX, strain.names=strain.names)
 mysnptree
 plot(mysnptree[1])

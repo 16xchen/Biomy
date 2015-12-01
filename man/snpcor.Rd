@@ -7,7 +7,7 @@
 snpcor(snpdata, snptree, micro.dend)
 }
 \arguments{
-\item{snpdata}{snpdata SNP data downloaded from opensource databases such as <http://msub.csbio.unc.edu/>or <http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF>}
+\item{snpdata}{snpdata SNP data downloaded from opensource databases such as <http://msub.csbio.unc.edu/> or <http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF>}
 
 \item{snptree}{a list of dendrograms generated from snp data}
 

@@ -20,7 +20,7 @@ cname=paste("strain", 1:12, sep="")
 rownames(trait)=rname
 colnames(trait)=cname
 #
-mymicro.dend=microtree(trait, nboot=10)
+mymicro.dend=traittree(trait, nboot=10)
 mycordata=snpcor(snpdata=chrX, snptree=mysnptree, micro.dend=mymicro.dend)
 mycordata.best=snpcor.best(cordata=mycordata,threshold = 0.9)
 drawtangle(snptree=mysnptree, micro.dend=mymicro.dend, cordata.best=mycordata.best, chr.num="X")

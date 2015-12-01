@@ -2,7 +2,7 @@
 #'
 #' Calculate Baker's Gamma correlation coefficient between two trees
 #'
-#' @param snpdata snpdata SNP data downloaded from opensource databases such as <http://msub.csbio.unc.edu/>or <http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF>
+#' @param snpdata snpdata SNP data downloaded from opensource databases such as <http://msub.csbio.unc.edu/> or <http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF>
 #' @param snptree a list of dendrograms generated from snp data
 #' @param micro.dend a dendrogram generated from microbiome relative abunance data
 #' @return a data frame of positions, snp chromosomal location, and correlation coefficient
