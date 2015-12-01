@@ -17,6 +17,6 @@ SampSNP=function(){
   library(RCurl)
   library(foreign)
   url= "https://raw.githubusercontent.com/16xchen/Biomy/master/chrX.csv"
-  chrX.data = getURL(url)
+  chrX.data = getURL(url, .opts = list(ssl.verifypeer = FALSE))
   return(read.csv(textConnection(chrX.data)))
 }
