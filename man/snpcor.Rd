@@ -21,12 +21,12 @@ Calculate Baker's Gamma correlation coefficient between two trees
 }
 \examples{
 set.seed(1234) #simulate microbiome relative abundance dataframe
-x <- rnorm(n=120, mean=5, sd=20)
-abundance=matrix(x,10,12)
-rname=paste("bacteria",1:10,sep="")
-cname=paste("species", 1:12, sep="")
-rownames(abundance)=rname
-colnames(abundance)=cname
+x <- rnorm(n=(16*12), mean=10, sd=10)
+trait=matrix(x,16,12)
+rname=paste("trait",1:16,sep="")
+cname=paste("strain", 1:12, sep="")
+rownames(trait)=rname
+colnames(trait)=cname
 
 mymicro.dend=microtree(microdata=abundance, nboot=10) #cluster strains by microbiome
 
