@@ -2,7 +2,7 @@
 % Please edit documentation in R/traittree.R
 \name{traittree}
 \alias{traittree}
-\title{Clustering strains base on microbiome relative trait data}
+\title{Clustering strains base on quantitative trait data}
 \usage{
 traittree(mircodata, nboot = 1000)
 }

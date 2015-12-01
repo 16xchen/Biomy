@@ -1,4 +1,4 @@
-#' Clustering strains base on microbiome relative trait data
+#' Clustering strains base on quantitative trait data
 #'
 #' Calculates p-values for hierarchical clustering via multiscale bootstrap resampling.
 #'

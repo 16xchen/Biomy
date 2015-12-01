@@ -18,7 +18,7 @@ a subsetted correlation dataframe
 Subsets dataframe from {snpcor} function to contain only the highly correlated SNP dendrograms
 }
 \examples{
-set.seed(1234) #simulate microbiome relative abundance dataframe
+set.seed(1234) #simulate quantitative trait dataframe
 x <- rnorm(n=(16*12), mean=10, sd=10)
 trait=matrix(x,16,12)
 rname=paste("trait",1:16,sep="")
@@ -26,10 +26,10 @@ cname=paste("strain", 1:12, sep="")
 rownames(trait)=rname
 colnames(trait)=cname
 
-mymicro.dend=microtree(microdata=abundance, nboot=10) #cluster strains by microbiome
+mymicro.dend=microtree(microdata=trait, nboot=10) #cluster strains by microbiome
 
 chrX = SampSNP()  #load SNP data
-strain.names=colnames(abundance) #assign the same strain names
+strain.names=colnames(trait) #assign the same strain names
 mysnptree=maketree(snpdata=chrX, strain.names=strain.names) #cluster strains by every 100 SNPs
 
 mycordata=snpcor(snpdata=chrX, snptree=mysnptree, micro.dend=mymicro.dend) #calculate correlation coefficient for micribiome dendrogram and each SNP dendrogram

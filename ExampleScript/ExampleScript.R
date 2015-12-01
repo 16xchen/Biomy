@@ -1,5 +1,5 @@
 #Example script using package Biomy
-#Correlating relative trait microbiome of host strain to Single Nucleotide Polymorphisms of host strain
+#Correlating quantitative traits of strains to Single Nucleotide Polymorphisms of strains
 #author: Xingyao Chen
 #date: 11/29/15
 #
