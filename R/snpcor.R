@@ -45,7 +45,7 @@ pos.start <- as.numeric(names(values))
 pos.end <- as.numeric(names(values))+100
 cordata <- cbind(1:length(values), snpdata[,1][c(pos.start)], snpdata[,1][c(pos.end)], cor)
 colnames(cordata)=c("pos","start", "end", "cor")
-return(cordata)
+return(as.data.frame(cordata))
 }
 
 

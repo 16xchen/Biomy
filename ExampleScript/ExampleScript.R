@@ -23,4 +23,4 @@ colnames(trait)=cname
 mytrait.dend=traittree(trait, nboot=10)
 mycordata=snpcor(snpdata=chrX, snptree=mysnptree, trait.dend=mytrait.dend)
 mycordata.best=snpcor.best(cordata=mycordata,threshold = 0.98)
-drawtangle(snptree=mysnptree, trait.dend=mytrait.dend, cordata.best=mycordata.best, chr.num="X")
+drawtangle(snptree=mysnptree, trait.dend=mytrait.dend, indata=mycordata[10:12,], chr.num="X")
