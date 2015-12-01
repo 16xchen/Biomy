@@ -23,7 +23,7 @@ Making tanglegrams of trait dendrograms matched up with snp dendrograms
 }
 \examples{
 set.seed(1234) #simulate quantitatie trait dataframe
-x <- rnorm(n=(16*12), mean=10, sd=10)
+x <- rnorm(n=(16*12), mean=10, sd=30)
 trait=matrix(x,16,12)
 rname=paste("trait",1:16,sep="")
 cname=paste("strain", 1:12, sep="")
