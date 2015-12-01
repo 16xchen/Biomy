@@ -4,16 +4,16 @@
 \alias{drawtangle}
 \title{Matching dendrograms}
 \usage{
-drawtangle(snptree, trait.dend, cordata.best, chr.num)
+drawtangle(snptree, trait.dend, indata, chr.num)
 }
 \arguments{
 \item{snptree}{A list of dendrograms generated from snp data}
 
 \item{trait.dend}{A dendrogram generated from quantitative trait data}
 
-\item{chr.num}{The chromosome number from which the snps are located}
+\item{indata}{A dataframe similar to outputs by {snocor} or {snpcor.best}, that determines which SNP trees to plot out as tanglegrams.}
 
-\item{cordata}{A dataframe which includes positions and corrlation values of highly correlated snp trees}
+\item{chr.num}{The chromosome number from which the snps are located}
 }
 \value{
 Plots highlt correlated tanglegrams with SNP location on chromosome in basepairs
@@ -38,7 +38,7 @@ mysnptree=maketree(snpdata=chrX, strain.names=strain.names) #cluster strains by 
 
 mycordata=snpcor(snpdata=chrX, snptree=mysnptree, trait.dend=mytrait.dend) #calculate Baker's correlation coefficient for trait dendrogram and each SNP dendrogram
 mycordata.best=snpcor.best(cordata=mycordata,threshold = 0.95) #find highly correlated SNP dendrograms
-drawtangle(snptree=mysnptree, trait.dend=mytrait.dend, cordata.best=mycordata.best, chr.num="X") #plot out as tanglegrams
+drawtangle(snptree=mysnptree, trait.dend=mytrait.dend, indata=mycordata.best, chr.num="X") #plot out as tanglegrams
 
 }
 \author{
