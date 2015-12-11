@@ -16,7 +16,7 @@ drawtangle(snptree, trait.dend, indata, chr.num)
 \item{chr.num}{The chromosome number from which the snps are located}
 }
 \value{
-Plots highlt correlated tanglegrams with SNP location on chromosome in basepairs
+Plots tanglegrams with the correlation value and the SNPs' location on chromosome in basepairs
 }
 \description{
 Making tanglegrams of trait dendrograms matched up with snp dendrograms

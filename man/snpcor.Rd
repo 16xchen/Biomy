@@ -2,16 +2,16 @@
 % Please edit documentation in R/snpcor.R
 \name{snpcor}
 \alias{snpcor}
-\title{Correlating SNP dendrograms with the traitbiome dendrogram}
+\title{Correlating SNP dendrograms with the trait dendrogram}
 \usage{
 snpcor(snpdata, snptree, trait.dend)
 }
 \arguments{
-\item{snpdata}{snpdata SNP data downloaded from opensource databases such as <http://msub.csbio.unc.edu/> or <http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF>}
+\item{snpdata}{SNP data downloaded from open source databases such as <http://msub.csbio.unc.edu/> or <http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF>}
 
 \item{snptree}{a list of dendrograms generated from snp data}
 
-\item{trait.dend}{a dendrogram generated from traitbiome relative abunance data}
+\item{trait.dend}{a dendrogram generated from quantitative trait data}
 }
 \value{
 a data frame of positions, snp chromosomal location, and correlation coefficient

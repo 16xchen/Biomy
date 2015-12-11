@@ -1,10 +1,10 @@
-#' Correlating SNP dendrograms with the traitbiome dendrogram
+#' Correlating SNP dendrograms with the trait dendrogram
 #'
 #' Calculate Baker's Gamma correlation coefficient between two trees
 #'
-#' @param snpdata snpdata SNP data downloaded from opensource databases such as <http://msub.csbio.unc.edu/> or <http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF>
+#' @param snpdata SNP data downloaded from open source databases such as <http://msub.csbio.unc.edu/> or <http://www.informatics.jax.org/javawi2/servlet/WIFetch?page=snpQF>
 #' @param snptree a list of dendrograms generated from snp data
-#' @param trait.dend a dendrogram generated from traitbiome relative abunance data
+#' @param trait.dend a dendrogram generated from quantitative trait data
 #' @return a data frame of positions, snp chromosomal location, and correlation coefficient
 #' @examples
 #' set.seed(1234) #simulate quantitative trait dataframe

@@ -5,7 +5,7 @@
 #' Hierarchical clustering is done for given data and p-values are computed for each of the clusters.
 #'
 #'
-#' @param traitdata A matrix of relative trait data
+#' @param traitdata A matrix of quantitative trait data
 #' @param nboot The number of bootstrap replications. The default is 1000.
 #' @return An object of dendrgram class
 #' @examples

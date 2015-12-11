@@ -7,7 +7,7 @@
 traittree(traitdata, nboot = 1000)
 }
 \arguments{
-\item{traitdata}{A matrix of relative trait data}
+\item{traitdata}{A matrix of quantitative trait data}
 
 \item{nboot}{The number of bootstrap replications. The default is 1000.}
 }

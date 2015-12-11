@@ -7,9 +7,9 @@
 snpcor.best(cordata, threshold)
 }
 \arguments{
-\item{cordata}{A dataframe generated from the function snpcor}
+\item{cordata}{q dataframe generated from the function snpcor}
 
-\item{threshold}{Percent thrshold (0<threshold<1) to search for highest correlations, default is 0.95}
+\item{threshold}{percent threshold (0-1) to search for highest correlations, default is 0.95}
 }
 \value{
 a subsetted correlation dataframe

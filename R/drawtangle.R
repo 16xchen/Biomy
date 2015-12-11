@@ -6,7 +6,7 @@
 #' @param trait.dend A dendrogram generated from quantitative trait data
 #' @param indata A dataframe similar to outputs by {snocor} or {snpcor.best}, that determines which SNP trees to plot out as tanglegrams.
 #' @param chr.num The chromosome number from which the snps are located
-#' @return Plots highlt correlated tanglegrams with SNP location on chromosome in basepairs
+#' @return Plots tanglegrams with the correlation value and the SNPs' location on chromosome in basepairs
 #' @examples
 #' set.seed(1234) #simulate quantitatie trait dataframe
 #' x <- rnorm(n=(16*12), mean=10, sd=30)
@@ -40,7 +40,7 @@ drawtangle = function(snptree, trait.dend, indata, chr.num)
   for(j in 1:nrow(indata)){
   tanglegram(untangle(intersect_trees(trait.dend, snptree[[indata[j,1]]])),
              main="Correlations",cex_main=1,
-             main_left = "traitbiome tree",
+             main_left = "Phenotype",
              main_right= paste("chr",chr.num, "SNP @", indata[j,2],"to", indata[j,3], "bp", sep=" "),
              sub=paste("correlation",round(indata[j, 4],digit=4),
                        sep=":"), cex_sub=0.9, highlight_distinct_edges=F,

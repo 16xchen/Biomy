@@ -3,8 +3,8 @@
 #' Subsets dataframe from {snpcor} function to contain only the highly correlated SNP dendrograms
 #'
 #'
-#' @param cordata A dataframe generated from the function snpcor
-#' @param threshold Percent thrshold (0<threshold<1) to search for highest correlations, default is 0.95
+#' @param cordata q dataframe generated from the function snpcor
+#' @param threshold percent threshold (0-1) to search for highest correlations, default is 0.95
 #' @return a subsetted correlation dataframe
 #' @examples
 #' set.seed(1234) #simulate quantitative trait dataframe
