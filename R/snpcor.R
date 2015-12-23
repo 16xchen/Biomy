@@ -27,8 +27,10 @@
 #' @export
 
 snpcor=function(snpdata, snptree, trait.dend){
-  require("dendextend") || install.packages('dendextend')
-  require("corrplot") || install.packages("corrplot")
+  if(!require("dendextend"))
+    install.packages('dendextend')
+  if(!require("corrplot"))
+    install.packages("corrplot")
   library("dendextend")
   library("corrplot")
 

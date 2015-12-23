@@ -32,7 +32,8 @@
 #'
 drawtangle = function(snptree, trait.dend, indata, chr.num)
 {
-  require("dendextend") || install.packages('dendextend')
+  if(!require("dendextend"))
+    install.packages('dendextend')
   library(dendextend)
   if(ncol(indata)==1){
     indata=t(indata)
