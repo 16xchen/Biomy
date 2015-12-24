@@ -12,8 +12,10 @@
 #'
 #'
 SampSNP=function(){
-  require("RCurl")||install.packages("RCurl")
-  require("foreign") || install.packages("foreign")
+  if(!require("RCurl"))
+    install.packages("RCurl")
+  if(!require("foreign"))
+    install.packages("foreign")
   library(RCurl)
   library(foreign)
   url= "https://raw.githubusercontent.com/16xchen/Biomy/master/chrX.csv"
