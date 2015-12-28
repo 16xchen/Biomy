@@ -35,18 +35,17 @@ drawtangle = function(snptree, trait.dend, indata, chr.num)
   if(!require("dendextend"))
     install.packages('dendextend')
   library(dendextend)
-  if(ncol(indata)==1){
-    indata=t(indata)
-  }
-  for(j in 1:nrow(indata)){
-  tanglegram(untangle(intersect_trees(trait.dend, snptree[[indata[j,1]]])),
+#   if(ncol(indata)==1){
+#     indata=t(indata)
+#   }
+  tanglegram(untangle(intersect_trees(trait.dend, snptree[[as.numeric(indata[1])]])),
              main="Correlations",cex_main=1,
              main_left = "Phenotype",
-             main_right= paste("chr",chr.num, "SNP @", indata[j,2],"to", indata[j,3], "bp", sep=" "),
-             sub=paste("correlation",round(indata[j, 4],digit=4),
+             main_right= paste("chr",chr.num, "SNP @", indata[2],"to", indata[3], "bp", sep=" "),
+             sub=paste("correlation",round(indata[4],digit=4),
                        sep=":"), cex_sub=0.9, highlight_distinct_edges=F,
              lwd=1.5, columns_width=c(4.5,1.8,4.5),
              margin_outer = 3,
              margin_inner=6)
 }
-}
+
