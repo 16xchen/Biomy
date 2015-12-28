@@ -1,7 +1,19 @@
+#' Loading a sample phenotype data
+#'
+#' dataset originally downloaded from <http://phenome.jax.org/>
+#'
+#' @return a large dataframe of SNP data from various mouse strains
+#' @examples
+#' chrX=SampSNP()
+#' head(chrX)
+#'
+#' @author Xingyao Chen
+#' @export
+#'
+#'
 
 
-
-SampSNP=function(){
+SampPheno=function(){
   if(!require("RCurl"))
     install.packages("RCurl")
   if(!require("foreign"))

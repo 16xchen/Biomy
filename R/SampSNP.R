@@ -1,6 +1,9 @@
-#' Loading a sample SNP data
+#' Loading a sample phenotype data
 #'
-#' dataset originally downloaded from <http://msub.csbio.unc.edu/>
+#' dataset is originally downloaded from <http://msub.csbio.unc.edu/>
+#'
+#' dataset is caloric intake data publsihed by Bodnar1 (2006)
+#'
 #'
 #' @return a large dataframe of SNP data from various mouse strains
 #' @examples
