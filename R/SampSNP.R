@@ -18,7 +18,7 @@ SampSNP=function(){
     install.packages("foreign")
   library(RCurl)
   library(foreign)
-  url= "https://raw.githubusercontent.com/16xchen/Biomy/master/chrX.csv"
-  chrX.data = getURL(url, .opts = list(ssl.verifypeer = FALSE))
-  return(read.csv(textConnection(chrX.data)))
+  url= "https://raw.githubusercontent.com/16xchen/Biomy/master/chr4.csv"
+  chr4.data = getURL(url, .opts = list(ssl.verifypeer = FALSE))
+  return(read.csv(textConnection(chr4.data)))
 }
