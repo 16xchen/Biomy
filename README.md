@@ -23,6 +23,6 @@ install_github("16xchen/Biomy")
 library(Biomy)
 #
 ##Contact: 
-If there is any trouble with the package, contact me at <16xchen@mdirss.org>
+If there is any trouble with the package, contact me at <16xchen@mdirss.org>, also be nice, I'm in high school.
 #
 #
