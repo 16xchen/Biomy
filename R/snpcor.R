@@ -40,6 +40,7 @@ for(i in  1:((nrow(snpdata)-100)/50)){
   dend_both <- dendlist(intersect_trees(trait.dend, snptree[[i]]))
   cor[[i]] <- cor.dendlist(dend_both)
   values[i] <- cor[[i]][1,2]
+  print(paste(i,"trees completed!")
 }
 names(values) <- c(seq(1,nrow(snpdata)-150, by=50))
 cor <- as.numeric(values)
