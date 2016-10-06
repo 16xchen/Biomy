@@ -28,7 +28,7 @@
 #'
 traittree=function(traitdata, nboot=1000){
   if(!require("pvclust"))
-    install.packages("pvclust")
+    install.packages("pvclust", repos='http://cran.us.r-project.org')
   library("pvclust")
   require("dendextend") || install.packages('dendextend', repos='http://cran.us.r-project.org')
   library(dendextend)
