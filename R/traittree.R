@@ -30,7 +30,7 @@ traittree=function(traitdata, nboot=1000){
   if(!require("pvclust"))
     install.packages("pvclust")
   library("pvclust")
-  require("dendextend") || install.packages('dendextend')
+  require("dendextend") || install.packages('dendextend', repos='http://cran.us.r-project.org')
   library(dendextend)
   a.clust = pvclust(traitdata, method.dist="cor", method.hclust="complete", nboot=nboot)
   return(as.dendrogram(a.clust))
