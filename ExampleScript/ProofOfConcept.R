@@ -3,12 +3,13 @@
 #author: Xingyao Chen
 #date: 11/29/17
 #
-install.packages("devtools")
+
+install.packages("devtools", repos = 'http://cran.rstudio.com/')
 library(devtools)
 install_github("16xchen/Biomy")
 library(Biomy)
+install.packages("reshape2", repos = 'http://cran.rstudio.com/')
 library(reshape2)
-rm(list=ls())
 #
 #load sample SNP data from UNC CSBio
 chr4=SampSNP()
