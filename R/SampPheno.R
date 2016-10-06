@@ -15,7 +15,7 @@
 
 SampPheno=function(){
   if(!require("RCurl"))
-    install.packages("RCurl")
+    install.packages("RCurl",  repos = 'http://cran.rstudio.com/')
   if(!require("foreign"))
     install.packages("foreign")
   library(RCurl)
