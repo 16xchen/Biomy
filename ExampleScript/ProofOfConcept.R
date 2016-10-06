@@ -32,10 +32,11 @@ mytrait.dend=traittree(mypheno, nboot=100)
 mycordata=snpcor(snpdata=chr4, snptree=mysnptree, trait.dend=mytrait.dend)
 mycordata.best=snpcor.best(cordata=mycordata,threshold = 0.8)
 drawtangle(snptree=mysnptree, trait.dend=mytrait.dend, indata=mycordata.best[1,], chr.num=4)
+pdf(file='tanglegrams.pdf')
 for(i in 1:nrow(mycordata.best)){
   drawtangle(snptree=mysnptree, trait.dend=mytrait.dend, indata=mycordata.best[i,], chr.num=4)
 }
-
+graphics.off()
 
 
 
