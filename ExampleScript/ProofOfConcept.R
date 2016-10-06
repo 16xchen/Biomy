@@ -3,12 +3,9 @@
 #author: Xingyao Chen
 #date: 11/29/17
 #
+system("mkdir library")
 #!/usr/bin/env Rscript
-args = commandArgs(trailingOnly = TRUE)
-print(args)
-#directory
-directory = args[1]
-.libPaths(paste(directory, "library", sep = "/"))
+.libPaths(paste(getwd(), "library", sep = "/"))
 install.packages("devtools", repos = 'http://cran.rstudio.com/')
 library(devtools)
 install_github("16xchen/Biomy")
