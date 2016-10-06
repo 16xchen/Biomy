@@ -28,9 +28,9 @@
 
 snpcor=function(snpdata, snptree, trait.dend){
   if(!require("dendextend"))
-    install.packages('dendextend')
+    install.packages('dendextend', repos='http://cran.us.r-project.org')
   if(!require("corrplot"))
-    install.packages("corrplot")
+    install.packages("corrplot", repos='http://cran.us.r-project.org')
   library("dendextend")
   library("corrplot")
 
