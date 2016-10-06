@@ -11,7 +11,7 @@
 #'
 finddistance <- function(snpdata, start=1, strain.names){
   if(!require("dendextend"))
-    install.packages('dendextend',  repos = 'http://cran.rstudio.com/')
+    install.packages('dendextend',  repos = 'http://cran.us.r-project.org')
   library(dendextend)
   dat <- snpdata[start:(start+100),]
   colnames(dat)<- c("position", strain.names)
